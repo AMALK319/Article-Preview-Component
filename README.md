@@ -6,7 +6,7 @@
 
 <div align="center">
   <h3>
-    <a href="" color="white">
+    <a href="https://amalk319.github.io/Article-Preview-Component/" color="white">
       Live
     </a>
     <span> | </span>

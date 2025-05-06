@@ -1,7 +1,4 @@
 # Frontend Mentor - Article preview component
-
-![Design preview for the Article preview component coding challenge](./design/desktop-preview.jpg)
-
 <img src="https://github.com/catherineisonline/article-preview-component-frontendmentor/blob/main/images/project-preview.png?raw=true"></img>
 
 
@@ -13,7 +10,7 @@
       Live
     </a>
     <span> | </span>
-    <a href="">
+    <a href="https://github.com/AMALK319/Article-Preview-Component">
       Solution
     </a>
    <span> | </span>

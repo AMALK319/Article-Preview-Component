@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800;900&display=swap');
+
+:root {
+    --white: #ffffff;
+    --lightgrey: #9FABB2;
+    --darkgrey: #4E555D;
+    --greyishwhite: #ECEFF4;
+    --lightblue: #EDF2F8;
+    --veryDarkGrayishBlue: hsl(217, 19%, 35%);
+    --desaturatedDarkBlue: hsl(214, 17%, 51%);
+    --grayishBlue: hsl(212, 23%, 69%);
+    --lightGrayishBlue: hsl(210, 46%, 95%);
+}
+
+*,
+a {
+
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--lightblue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 740px;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    background-color: var(--white);
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px var(--greyishwhite);
+
+}
+
+.card-image {
+    width: 100%;
+    height: 100%;
+    background-image: url('./images/drawers.jpg');
+    background-position: left center;
+    background-size: cover;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.card-content {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 14px;
+}
+
+.dark-text {
+    color: var(--darkgrey);
+}
+
+.light-text {
+    color: var(--lightgrey);
+}
+
+.card-content-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-content {
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.avatar-image {
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+}
+
+.bold-text {
+    font-weight: 700;
+}
+
+.sm-text {
+    font-size: 12px;
+}
+
+button {
+    border-radius: 50%;
+    background-color: var(--lightblue);
+    border: none;
+    width: 32px;
+    height: 32px;
+    padding: 5px;
+}
+
+.bg-image {
+    background-image: url('./images/icon-share.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.share-box {
+    display: none;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 5px;
+    background-color: var(--veryDarkGrayishBlue);
+    box-shadow: 2px 2px 5px var(--veryDarkGrayishBlue);
+    padding: 15px 30px ;
+    position: relative;
+    bottom: 80px;  /* From bottom to top */
+    transform: translate(-50%, 0);
+    
+}
+
+.share-box::after{ /* creating a virtual triangle element in the bottom of button */
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid var(--veryDarkGrayishBlue);
+    border-bottom: 0;
+    
+}
+
+.share-box span {
+    text-transform: uppercase;
+    color: var(--lightgrey);
+    letter-spacing: 3px;
+    text-decoration: none;
+}
+
+.share-icon {
+    width: 20px;
+    height: 20px;
+}
+.social-icons{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}

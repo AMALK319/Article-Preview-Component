@@ -30,7 +30,7 @@
 ```css
 .share-box {
   position: relative;
-  bottom: 80px; /* Negative bottom = upward movement */
+  bottom: 80px; /* From bottom to top*/
   transform: translate(-50%, 0); /* Horizontal centering */
 }
 
@@ -42,7 +42,7 @@
 .share-box::after {
   content: ""; /* Mandatory for pseudo-elements */
   position: absolute;
-  bottom: -10px; /* Extend below parent */
+  bottom: -10px; 
   left: 50%; /* Horizontal alignment */
 }
 
